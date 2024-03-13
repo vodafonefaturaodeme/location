@@ -20,7 +20,7 @@ const PhoneNumberValidation = () => {
   return (
     <div>
       <label >
-       
+
         <PhoneInput
           country={'in'}
           value={phoneNumber}
