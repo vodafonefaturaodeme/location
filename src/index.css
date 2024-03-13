@@ -5,3 +5,7 @@
 body{
   background-color: #000300;
 }
+
+.react-tel-input .country-list .country{
+  text-align: left;
+}

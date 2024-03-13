@@ -10,11 +10,11 @@ const Hero =() =>{
         <div className='max-w-[800px] mt-[-96px] w-full h-screen mx-auto text-center flex flex-col justify-center'>
           
           <h1 className='md:text-7xl sm:text-6xl text-4xl font-bold md:py-6'>
-            Konum Bulun.
+          Locate any phone, anywhere.
           </h1>
           
           <div className='flex flex-col items-center justify-center w-full'>
-  <p className='md:text-2xl text-xl font-bold text-gray-500 mb-2'>Dünyanın neresinde olursa olsun numarasını bildiğiniz herhangi bir telefonu bulun</p>
+  <p className='md:text-2xl text-xl font-bold text-gray-500 mb-2'>Find any phone whose number you know, anywhere in the world</p>
   <div className='flex flex-row items-center justify-center w-full'>
     <div className="text-black">
       <PhoneInput
