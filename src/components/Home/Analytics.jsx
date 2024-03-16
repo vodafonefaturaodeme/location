@@ -1,5 +1,5 @@
 import React from 'react';
-import Laptop from '../assets/tel.webp';
+import Laptop from '../../assets/image/tel.webp';
 
 const Analytics = () => {
   return (

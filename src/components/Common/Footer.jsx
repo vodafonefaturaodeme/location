@@ -9,7 +9,7 @@ import {
 
 const Footer = () => {
   return (
-    <div className='max-w-[1240px] mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300'>
+    <div className='mx-auto py-16 px-4 grid lg:grid-cols-3 gap-8 text-gray-300' style={{backgroundColor:'black'}}>
       <div>
         <h1 className='w-full text-3xl font-bold text-[#1452fc]'>Location</h1>
         <p className='py-4'>Getting the geolocation of any mobile phone with Geosite is super easy.</p>

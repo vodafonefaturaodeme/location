@@ -1,19 +1,25 @@
 import React from 'react';
-import HomePage from './components/homepage';
-import Tos from './components/satis';
-import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
+import HomePage from './Screen/Home/homepage';
+import SSSPage from './Screen/SSS/ssspage';
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link,
+} from "react-router-dom";
+
 
 function App() {
   return (
 
-    <Router>
-       <Switch>
-          <Route path="/" exact component={HomePage} />
-          <Route path="/tos" component={Tos} />
-          {/* Diğer sayfalar için de benzer şekilde Route ekleyebilirsiniz */}
-        </Switch>
+    <div>
+    <Routes>
+      <Route path="/" element={<HomePage />} />
+      <Route path="/sss" element={<SSSPage />} />
+    </Routes>
+  </div>
+
    
-    </Router>
     
   );
 }

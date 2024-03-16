@@ -1,23 +1,17 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
+import React from "react";
+import ReactDOM from "react-dom";
+import { BrowserRouter } from "react-router-dom";
+
 import './index.css';
 import App from './App';
-import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Tos from "./components/satis"
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
+
+ReactDOM.render(
   <BrowserRouter>
-    <Switch>
-      <Route path="/tos">
-        <Tos />
-      </Route>
-      
-      <Route path="/">
-        <App />
-      </Route>
-    </Switch>
-  </BrowserRouter>
+    <App />
+  </BrowserRouter>,
+  document.getElementById("root")
 );
 
 // If you want to start measuring performance in your app, pass a function
