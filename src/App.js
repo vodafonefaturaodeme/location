@@ -1,21 +1,20 @@
 import React from 'react';
-import Analytics from './components/Analytics';
-import Cards from './components/Cards';
-import Footer from './components/Footer';
-import Hero from './components/Hero';
-import Navbar from './components/Navbar';
-import Newsletter from './components/NewSletter';
+import HomePage from './components/homepage';
+import Tos from './components/satis';
+import { BrowserRouter as Router, Route, Switch, Link } from 'react-router-dom';
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <Analytics />
-      <Newsletter />
-      <Cards />
-      <Footer />
-    </div>
+
+    <Router>
+       <Switch>
+          <Route path="/" exact component={HomePage} />
+          <Route path="/tos" component={Tos} />
+          {/* Diğer sayfalar için de benzer şekilde Route ekleyebilirsiniz */}
+        </Switch>
+   
+    </Router>
+    
   );
 }
 
